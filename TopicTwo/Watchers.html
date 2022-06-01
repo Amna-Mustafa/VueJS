@@ -9,7 +9,7 @@
 	</h3>
 
 	<!-- Creating element for Vue -->
-	<div style="text-align: center;" id="shopping-list">
+	<div style="text-align: center;" id="app">
 		<h3>Enter any Value :
 			<input type="text" v-model="value1">
 		</h3>
@@ -32,13 +32,17 @@
                     value1: ''
                     result: 0
                 },
-                methods: {
-                    multiply: function () {
-                        this.result = this.value1 * 2;
+                watch: {
+                    value1: function (val) {
+                        this.value1 = val;
+                        this.result = 2 * val;
+                    },
+                    result: function (val) {
+                        this.result = val;
                     }
                 }
             })
-            .mount('#shopping-list')
+            .mount('#app')
         </script>
 </body>
 

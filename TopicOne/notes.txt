@@ -35,3 +35,8 @@
 5. Mounted() (basically a hook)
 
     => send an HTTP request to fetch data that the component will then render.
+ 
+ 6. Computed vs methods
+
+    => When we need to change data use methods
+    => When we need to change the presentation of existing data use computed.
