@@ -1,0 +1,37 @@
+
+
+1. What is VueJS
+
+=> Vue is a JavaScript framework for building user interfaces. 
+    It builds on top of standard HTML, CSS and JavaScript,
+    and provides a declarative and component-based programming model that helps you efficiently develop user interfaces, 
+    be it simple or complex.
+
+2. Features of VueJS
+
+    (i) Declarative Rendering: 
+        Vue extends standard HTML with a template syntax that allows us to declaratively describe HTML output based on JavaScript state.
+
+    (ii) Reactivity: 
+        Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happen.
+
+
+3. API styles
+
+    Vue components can be authored in two different API styles: Options API and Composition.
+
+    (i) Options
+        With Options API, we define a component's logic using an object of options such as data, methods, and mounted. 
+        Properties defined by options are exposed on this inside functions.
+    
+    (ii) Composition
+        We define a component's logic using imported API functions.
+
+4. which to choose?
+
+    => Now using Composition API, you can do all those things but in a lot more organized way which makes your code much cleaner and easy to manage.
+    => That is why nowadays most developers prefer Compositions API over Options API.
+    
+5. Mounted() (basically a hook)
+
+    => send an HTTP request to fetch data that the component will then render.

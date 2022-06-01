@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js Watchers</title>
+</head>
+<body>
+	<h3 style="text-align: center">
+		Vue.js | Watchers
+	</h3>
+
+	<!-- Creating element for Vue -->
+	<div style="text-align: center;" id="shopping-list">
+		<h3>Enter any Value :
+			<input type="text" v-model="value1">
+		</h3>
+		<h3>Input number x 2 :
+			<span style="font-size: 30px;">
+				{{result}}
+			</span>
+		</h3>
+
+		<!-- Creating a Button -->
+		<button @click="multiply">
+			Click Me
+		</button>
+	</div>
+	
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
+            const shoppingListApp = Vue.createApp({
+                data() {
+                    value1: ''
+                    result: 0
+                },
+                methods: {
+                    multiply: function () {
+                        this.result = this.value1 * 2;
+                    }
+                }
+            })
+            .mount('#shopping-list')
+        </script>
+</body>
+
+</html>
